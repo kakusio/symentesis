@@ -1,0 +1,12 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Entitties="clr-namespace:Symentesis.Entitties" x:Name="MainWindows" x:Class="Symentesis.MainWindow"
+        Title="MainWindow" Height="600" Width="800"
+        Loaded="Window_Loaded" WindowState="Maximized">
+    <DataGrid x:Name="DataGridListaPacientes" HorizontalAlignment="Left" Margin="10,10,10,10" VerticalAlignment="Top" EnableColumnVirtualization="True" IsTextSearchEnabled="True" IsSynchronizedWithCurrentItem="True" CanUserReorderColumns="False" SelectionMode="Single" MinWidth="780" MinHeight="580" CanUserResizeRows="False">
+        <DataGrid.DataContext>
+            <Entitties:Paciente Telefono="xxx-xxx-xxxx" Cedula="xxx-xxxxxxx-x"/>
+        </DataGrid.DataContext>
+    </DataGrid>
+</Window>
